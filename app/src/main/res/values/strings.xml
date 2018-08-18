@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">SimulaCadastro</string>
+    <string name="profissao">Profissão</string>
+    <string name="feminino">Feminino</string>
+    <string name="nome">Nome</string>
+    <string name="data_nascimento">Data Nascimento</string>
+    <string name="sexo">Sexo</string>
+    <string name="masculino">Masculino</string>
 </resources>
