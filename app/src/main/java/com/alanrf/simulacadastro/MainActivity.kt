@@ -17,10 +17,31 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun validarCampos(): Boolean {
-        return validaSenhas()
+        return validaEmail() && validaSenhas()
+    }
+
+    fun validaEmail(): Boolean {
+        val b = edEmail.text.contains("@")
+        if (!b) {
+            edEmail.error = "Email não está num formato reconhecido."
+        }
+        return b
     }
 
     fun validaSenhas(): Boolean {
-        return edNome.text == edNome.text
+        val b = edSenha.text == edConfirmarSenha.text
+
+        if (!b) {
+            val msg = "Senha e Confirmar Senha devem ser iguais"
+            edSenha.error = msg
+            edConfirmarSenha.error = msg
+        }
+        return b
+    }
+
+    fun cadastrar() {
+        if (validarCampos()) {
+            //TODO chamar a proxima tela e passar os dados do cadastro para a mesma.
+        }
     }
 }

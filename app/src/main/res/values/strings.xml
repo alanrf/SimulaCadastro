@@ -6,4 +6,32 @@
     <string name="data_nascimento">Data Nascimento</string>
     <string name="sexo">Sexo</string>
     <string name="masculino">Masculino</string>
+    <string name="estado_civil">Estado Civil</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="confirmar_senha">Confirmar Senha</string>
+
+    <string-array name="array_profissao">
+        <item>Analista de Requisitos</item>
+        <item>Analista de Sistemas</item>
+        <item>Analista de Testes</item>
+        <item>Arquiteto</item>
+        <item>Desenvolvedor</item>
+        <item>Estagiário</item>
+        <item>Gerente de Produto</item>
+        <item>Gerente de Projeto</item>
+        <item>Programador</item>
+        <item>Projetista</item>
+        <item>Scrum master</item>
+        <item>Testador</item>
+        <item>Outra</item>
+    </string-array>
+
+    <string-array name="array_estado_civil">
+        <item>Solteiro</item>
+        <item>Casado</item>
+        <item>Viúvo</item>
+        <item>Amasiado</item>
+    </string-array>
+
 </resources>
