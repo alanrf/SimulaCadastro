@@ -10,6 +10,9 @@
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="confirmar_senha">Confirmar Senha</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="msg_valida_email">Email não está num formato reconhecido.</string>
+    <string name="msg_valida_senha">Senha e Confirmar Senha devem ser iguais</string>
 
     <string-array name="array_profissao">
         <item>Analista de Requisitos</item>
