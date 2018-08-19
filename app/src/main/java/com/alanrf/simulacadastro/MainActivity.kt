@@ -112,20 +112,21 @@ class MainActivity : AppCompatActivity() {
         })
     }
 
-    fun validarCampos(): Boolean {
+    private fun validarCampos(): Boolean {
         var b = validaEmail()
         b = validaSenhas() && b
+        b = validaOutraProfissaoPreenchida() && b
         return b
     }
 
-    fun validaEmail(): Boolean {
+    private fun validaEmail(): Boolean {
         val b = edEmail.text.contains("@")
         if (!b)
             edEmail.setError(getString(R.string.msg_valida_email))
         return b
     }
 
-    fun validaSenhas(): Boolean {
+    private fun validaSenhas(): Boolean {
         val b = edSenha.text.toString() == edConfirmarSenha.text.toString()
 
         if (!b) {
@@ -136,7 +137,7 @@ class MainActivity : AppCompatActivity() {
         return b
     }
 
-    fun validaOutraProfissaoPreenchida(): Boolean {
+    private fun validaOutraProfissaoPreenchida(): Boolean {
         var b = true
         if (edProfissaoEspecifica.visibility == View.VISIBLE) {
             b = !edProfissaoEspecifica.text.isEmpty()
@@ -147,7 +148,7 @@ class MainActivity : AppCompatActivity() {
         return b
     }
 
-    fun cadastrar() {
+    private fun cadastrar() {
         if (validarCampos()) {
             val it = Intent(this, ExibeDadosActivity::class.java)
 
