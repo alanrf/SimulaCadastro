@@ -2,6 +2,7 @@ package com.alanrf.simulacadastro
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.alanrf.simulacadastro.R.id.*
 import kotlinx.android.synthetic.main.activity_exibe_dados.*
 
 class ExibeDadosActivity : AppCompatActivity() {
@@ -9,6 +10,10 @@ class ExibeDadosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_exibe_dados)
+
+        btVoltar.setOnClickListener{
+            finish()
+        }
     }
 
     override fun onResume() {

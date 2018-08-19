@@ -66,19 +66,19 @@
         android:id="@+id/lbSexo"
         android:layout_width="126dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:text="@string/sexo"
-        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edNome" />
 
     <TextView
         android:id="@+id/edSexo"
         android:layout_width="126dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
         android:text=""
         android:textStyle="bold"
@@ -157,7 +157,14 @@
         android:text=""
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lbEmail"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/lbEmail" />
+
+    <Button
+        android:id="@+id/btVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmail" />
 
 </android.support.constraint.ConstraintLayout>
